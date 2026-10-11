@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@theme {
+  /* Font Family */
+  --font-poppins: "Poppins", sans-serif;
+  --font-sans: "Poppins", sans-serif;
+  --font-cursive: "Pacifico", cursive;
+
+  /* Custom Colors */
+  --color-primary: #854d3d;
+  --color-secondary: #4a1e1b;
+  --color-brand-dark: #270c03;
+}
+
+/* Container Center & Responsive Padding */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+}
